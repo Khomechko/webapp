@@ -1,0 +1,12 @@
+1. - html
+2. - table / div styles
+3. - table layout / float layout
+4. - position / position layout 
+5. - styles / burger / flex
+6. - grid / grid layout
+7. - website layout
+8. - media requests
+9. - adaptive layout
+10. - JS, part1
+11. - JS, part2
+12. - JS, cycles and conditions
