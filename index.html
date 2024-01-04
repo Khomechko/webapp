@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
 	<head>
 		<meta charset="UTF-8" />
 		<title>moto-podbor</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<button class="btn_up"><a class="btn" href="#">Наверх</a></button>
+		<button class="btn_up"><a class="btn" href="#">&#9650;</a></button>
 		<header class="header">
 			<div class="header_inner">
 				<h1>Мото-подбор</h1>
@@ -29,8 +29,43 @@
 				</div>
 			</div>
 		</div>
-		<main class="main">
+		<main class="main" id="main">
 			<div class="main_inner">
+				<div class="popup" id="popupid">
+					<div class="popup_content">
+						<div class="burger_close">
+							<label class="close">X</label>
+						</div>
+						<div class="nav_list">
+							<h2>Навигация</h2>
+							<a href="#best"><span>Лучшее</span></a>
+							<a href="#later"><span>Скоро</span></a>
+							<a href="#poor"><span>Худшее</span></a>
+						</div>
+						<form>
+							<h2>Авторизация</h2>
+							<div class="div_auth">
+								<input class="auth" placeholder="Логин" />
+							</div>
+							<div class="div_auth">
+								<input class="auth" placeholder="Пароль" type="password" />
+							</div>
+							<div class="forgot">
+								<label style="color: rgb(63, 143, 255)"
+									><a href="#">Забыли пароль?</a></label
+								>
+							</div>
+							<button class="btn_auth">Войти</button>
+							<div class="div_cb">
+								<label>Нет аккаунта?</label>
+								<label style="color: rgb(63, 143, 255)"
+									><a href="#">Создать</a></label
+								>
+							</div>
+						</form>
+					</div>
+				</div>
+				<button id="burger_open">...</button>
 				<aside class="nav">
 					<div class="nav_list">
 						<h2>Навигация</h2>
@@ -40,7 +75,6 @@
 					</div>
 				</aside>
 				<section class="content">
-					<!-- <script src="script.js"></script> -->
 					<div class="category" id="best">
 						<p id="best">Лучшее</p>
 					</div>
@@ -247,11 +281,9 @@
 						<h2>Авторизация</h2>
 						<div class="div_auth">
 							<input class="auth" placeholder="Логин" />
-							<!-- <label class="label_auth">Логин</label> -->
 						</div>
 						<div class="div_auth">
 							<input class="auth" placeholder="Пароль" type="password" />
-							<!-- <label class="label_auth">Пароль</label> -->
 						</div>
 						<div class="forgot">
 							<label style="color: rgb(63, 143, 255)"
@@ -260,7 +292,6 @@
 						</div>
 						<button class="btn_auth">Войти</button>
 						<div class="div_cb">
-							<!-- <input class="cb" type="checkbox" /> -->
 							<label>Нет аккаунта?</label>
 							<label style="color: rgb(63, 143, 255)"
 								><a href="#">Создать</a></label
@@ -285,5 +316,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>

@@ -5,8 +5,8 @@
 5. - styles / burger / flex
 6. - grid / grid layout
 7. - website layout
-8. - media requests
-9. - adaptive layout
+8. - media requests / adaptive layout
+9. - animations
 10. - JS, part1
 11. - JS, part2
 12. - JS, cycles and conditions

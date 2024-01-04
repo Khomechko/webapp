@@ -1,27 +1,20 @@
-const arr = [1, 2, 3, 4, 5]
-console.log(arr.at(2))
+let popup = document.getElementById('popupid'),
+	popupToggle = document.getElementById('burger_open'),
+	popupClose = document.querySelector('.close'),
+	main = document.getElementById('main'),
+	html = document.getElementById('html')
 
-//   >, <
-//   >=, <=
-//   ==, !=
-//   ===, !==
-//   ASCII table
-
-console.log('a' > 'b')
-console.log('55' == 'n')
-console.log('a' > 'A')
-console.log('abc' == 'acb')
-
-const obj1 = {
-	name: 'Alex',
-	age: 24,
-	gender: 'male'
+popupToggle.onclick = function () {
+	popup.style.display = 'block'
+	html.style.overflow = 'hidden'
 }
-const obj2 = obj1
-console.log(obj1, obj2)
-
-const obj3 = {
-	...obj1
+popupClose.onclick = function () {
+	popup.style.display = 'none'
+	html.style.overflowY = 'visible'
 }
-
-// console.log(obj3.age === obj4.age)
+window.onclick = function (event) {
+	if (event.target == popup) {
+		popup.style.display = 'none'
+		html.style.overflowY = 'visible'
+	}
+}
